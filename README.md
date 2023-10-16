@@ -8,9 +8,10 @@ This project is designed as a demonstration of my skills in building scalable, m
 - Node version installed above 20.11.1.
 - A package manager such as NPM or Yarn.
 - Install MySQL and phpMyAdmin.
-- Modify the .env file according to your MySQL credentials.
+- Create an `.env` file based on the `.env.sample` and update MongoDB credentials.
 - API testing tool like Postman. 
 - Import the `NestJS CRUD.postman_collection.json` file in Postman.
+- Run `npm install` to install the necessary node packages.
 - Run the `npm start` commands.
 
 ## Project Run Commands
@@ -39,18 +40,24 @@ The following topics covered in this unit:
 
 <table>
  <tr>
-    <td><b>nestJS:</b></td>
-    <td><a href="https://nestjs.com/">nestjs</a></td>
+    <td><b>NestJS:</b></td>
+    <td><a href="https://nestjs.com/">nestjs.com</a></td>
   </tr>
   <tr>
     <td><b>NodeJS:</b></td>
-    <td><a href="https://nodejs.org/en">Nodejs.org</a></td>
+    <td><a href="https://nodejs.org/en">nodejs.org</a></td>
   </tr>
   <tr>
     <td><b>Typescript:</b></td>
     <td><a href="https://www.typescriptlang.org/">typescriptlang.org</a></td>
   </tr>
 </table>
+
+## Connect with me
+
+- Website: [rajneshwar.com](https://rajneshwar.com)
+- LinkedIn: [linkedin.com/in/rajneshwar-singh](https://www.linkedin.com/in/rajneshwar-singh/)
+- Email: [rajneshwarthakur@gmail.com](mailto:rajneshwarthakur@gmail.com)
 
 ---
 
