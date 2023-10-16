@@ -1,0 +1,322 @@
+{
+	"info": {
+		"_postman_id": "8558d7ed-854d-42a1-802d-3d990b6bb517",
+		"name": "NestJS CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33606016"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GetAllUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVjYzFhNzMwLTcyNTgtNGZiMy04ODM0LWZlZDI2ZDZhYTNiYSIsImVtYWlsIjoidGVzdDRAZ21haWwuY29tIiwiaWF0IjoxNzIzMDExNjEwLCJleHAiOjE3MjMwMTI1MTB9.r0FpY7rkolT8JPiRLtL-niJpz06WZm1lGNkoLQd2fpg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3002/user?limit=10&page=1&sortBy=createdAt&sortOrder=asc",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sortBy",
+									"value": "createdAt"
+								},
+								{
+									"key": "sortOrder",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVjYzFhNzMwLTcyNTgtNGZiMy04ODM0LWZlZDI2ZDZhYTNiYSIsImVtYWlsIjoidGVzdDRAZ21haWwuY29tIiwiaWF0IjoxNzIzMDExNjEwLCJleHAiOjE3MjMwMTI1MTB9.r0FpY7rkolT8JPiRLtL-niJpz06WZm1lGNkoLQd2fpg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3002/user/83605c3e-f283-490b-9c60-07b49dcb318a",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"user",
+								"83605c3e-f283-490b-9c60-07b49dcb318a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVjYzFhNzMwLTcyNTgtNGZiMy04ODM0LWZlZDI2ZDZhYTNiYSIsImVtYWlsIjoidGVzdDRAZ21haWwuY29tIiwiaWF0IjoxNzIzMDExNjEwLCJleHAiOjE3MjMwMTI1MTB9.r0FpY7rkolT8JPiRLtL-niJpz06WZm1lGNkoLQd2fpg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3002/user/d36b94f8-4d92-4dcf-95ea-659692963681",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"user",
+								"d36b94f8-4d92-4dcf-95ea-659692963681"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVjYzFhNzMwLTcyNTgtNGZiMy04ODM0LWZlZDI2ZDZhYTNiYSIsImVtYWlsIjoidGVzdDRAZ21haWwuY29tIiwiaWF0IjoxNzIzMDEzNzA0LCJleHAiOjE3MjMwMjUxMDR9.aaHvlIGzZyAePEeTNw6UEPIXrq8lIDDQcUUcTt_3RMo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\":\"Ravi2\",\n    \"lastName\":\"sharma\",\n    \"email\": \"test5@gmail.com\",\n    \"password\":\"hello\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3002/user/f98c5f6b-adbe-4807-819f-0fe6d56ff412",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"user",
+								"f98c5f6b-adbe-4807-819f-0fe6d56ff412"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bookmark",
+			"item": [
+				{
+					"name": "Create Bookmark",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"google\",\n    \"url\":\"google.com\",\n    \"userId\":\"ec7b61d2-0042-43c3-8bd6-4b820694af50\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3002/bookmark/",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"bookmark",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Bookmarks",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3002/bookmark/?limit=10&page=1&sortBy=createdAt&sortOrder=asc",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"bookmark",
+								""
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sortBy",
+									"value": "createdAt"
+								},
+								{
+									"key": "sortOrder",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bookmark By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3002/bookmark/0869075c-2800-4d8f-ba45-5d63e462068f",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"bookmark",
+								"0869075c-2800-4d8f-ba45-5d63e462068f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Bookmark",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3002/bookmark/d0e5247f-d84b-422b-a031-0cc6abc3daf3",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"bookmark",
+								"d0e5247f-d84b-422b-a031-0cc6abc3daf3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "SignUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Rajneshwar3\",\n    \"lastName\": \"Singh\",\n    \"email\": \"test3@gmail.com\",\n    \"password\": \"Qwerty@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3002/auth/signUp",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"auth",
+								"signUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignIn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"test4@gmail.com\",\n    \"password\": \"Qwerty@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3002/auth/signIn",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"auth",
+								"signIn"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
